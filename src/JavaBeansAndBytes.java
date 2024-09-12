@@ -34,12 +34,14 @@ public class JavaBeansAndBytes {
 
         // TODO
         // Update the year founded and print the new yearFounded in a sentence
+        yearFounded = 2008;
+        System.out.println("actually, founded in " + yearFounded);
 
         // Calling methods
         randomDiscount();
         // TODO
-        // Add parameter to specialOfTheDay (drink of your choice)
-        specialOfTheDay();
+        // Add string parameter to specialOfTheDay (drink of your choice)
+        specialOfTheDay("hot chocolate");
         countCups();
         baristasChoice();
 
@@ -57,13 +59,17 @@ public class JavaBeansAndBytes {
         // TODO
         // Make this method generate a random integer discount (0-30%)
         // and print the result.
+        //Math.random() is a decimal 0-1
+        double r = (int)(Math.random()*31);
+        System.out.println("Random discount is "+ r + "%!");
     }
 
     // Method with a parameter for the special of the day
-    public void specialOfTheDay() {
+    public void specialOfTheDay(String special) {
         // TODO
         // Make this method accept a parameter representing the day’s special.
         // Print the day's special.
+        System.out.println("Today's Special is "+special);
     }
 
     // Method to show loops
@@ -74,9 +80,15 @@ public class JavaBeansAndBytes {
         // Write three different for loops that print the indicated numbers:
 
         // Print 1 to 5
+        for(int c = 1; c < 6;c++){
+            System.out.println(c);
+        }
 
 
         // Print 2, 5, 8, 11
+        for(int i = 2; i<12; i+=3){
+            System.out.print(i+", ");
+        }
 
 
         // Print 8 to 0
