@@ -92,6 +92,9 @@ public class JavaBeansAndBytes {
 
 
         // Print 8 to 0
+        for(int j = 8; j<9; j=j-1){
+            System.out.print(j);
+        }
 
     }
 
@@ -100,6 +103,7 @@ public class JavaBeansAndBytes {
         // TODO
         // Make this method generate a random decimal between 0 and 1
         // and print one of four drink recommendations based on its value.
+        Math.random()*10;
     }
 }
 
