@@ -48,10 +48,12 @@ public class JavaBeansAndBytes {
         // TODO
         // Create two CoffeeDrink objects
         Drink order1 = new Drink(9, "ice water", true);
+        Drink order2 = new Drink();
 
         // TODO
         // Print out the order details
         order1.printInfo();
+        order2.printInfo();
 
 
     }
@@ -63,7 +65,21 @@ public class JavaBeansAndBytes {
         // and print the result.
         //Math.random() is a decimal 0-1
         double r = (int)(Math.random()*31);
-        System.out.println("Random discount is "+ r + "%!");
+        while(r<26){ // in the () goes the condition which,Aq   ``12345q as long as the condition is true the loop will keep funning
+            r = (int)(Math.random()*31);
+            System.out.println("Random discount is "+ r + "%!");
+
+            //now do it with a for loop
+            for(int x = 0; x<1;x=x-1){
+                System.out.println(x);
+                r = (int)(Math.random()*31);
+                System.out.println("Random discount is "+ r + "%!");
+                if(r>=26){
+                    break;
+                }
+            }
+            System.out.println("end of loop");
+        }
     }
 
     // Method with a parameter for the special of the day

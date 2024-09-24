@@ -17,6 +17,20 @@ class Drink {
         this.hasWhippedCream = hasWhippedCream;
     }
 
+    //another drink constructor
+    // method overloading
+    public Drink(){
+        drinkType = "coffee";
+        numberOfCups = 1;
+        hasWhippedCream = false;
+    }
+    // Drink Constructor that takes in a number of cups parameter
+    // but has "coffee" and false as defaults for other variables
+    public Drink(int numberOfCups){
+        drinkType = "coffee";
+        hasWhippedCream = false;
+    }
+
     // Method to print information about the CoffeeDrink
     public void printInfo() {
         // TODO
@@ -26,7 +40,7 @@ class Drink {
         if(hasWhippedCream){
             System.out.println(" with whipped cream");
         }else{
-            System.out.println("without");
+            System.out.println(" without whipped cream");
         }
 
 
